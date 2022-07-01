@@ -3,6 +3,8 @@
     "react-app",
     "react-app/jest"
   ],
+  "plugins": ["simple-import-sort"],
+
   "rules": {
     "no-console": "warn",
     "prefer-const": "error",
@@ -12,12 +14,7 @@
     "max-len": ["error", {"code":  120}],
     "comma-dangle": ["error", "always-multiline"],
     "semi": ["warn", "always"],
-    "sort-imports": ["error", {
-      "ignoreCase": false,
-      "ignoreDeclarationSort": false,
-      "ignoreMemberSort": false,
-      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-      "allowSeparatedGroups": false
-    }]
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error"
   }
 }
