@@ -4,7 +4,6 @@
     "react-app/jest"
   ],
   "plugins": ["simple-import-sort"],
-
   "rules": {
     "no-console": "warn",
     "prefer-const": "error",
