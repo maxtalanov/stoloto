@@ -1,0 +1,55 @@
+.ticket {
+    width: 100%;
+    min-height: 368px;
+    background: #FFFFFF;
+    border-radius: 3px;
+}
+
+.ticket__heading {
+    width: calc(100% - 14px - 16px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 12px 0 16px;
+}
+
+.ticket__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px
+}
+
+.ticket__message {
+    display: block;
+    color: #000000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 16px;
+}
+
+.ticket__btn-magic {
+    width: 26px;
+    height: 30px;
+    border-style: none;
+    background: none no-repeat center;
+    cursor: pointer;
+}
+
+.ticket__btn-submit-container {
+    display: flex;
+    justify-content: center;
+    margin: 24px auto 0 auto;
+    padding: 0 0 24px 0;
+}
+
+.ticket__btn-submit {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    width: 178px;
+    min-height: 43px;
+    border: solid 1px #DDDDDD;
+    border-radius: 40px;
+    margin: 0;
+}
