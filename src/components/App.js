@@ -10,7 +10,8 @@ function App() {
     isLock: false,
     isNoLock: false,
   });
-  function handlerPostTicket(ticketResult) {
+
+  function handlerPostTicket(ticketResult, count = 1) {
     if (ticketResult.isTicketWon) {
       setTicketResult({isLock: true, isNoLock: false});
     } else {
@@ -19,7 +20,13 @@ function App() {
 
     return postTicket(ticketResult)
       .then(v => console.log(v))
-      .catch();
+      .catch(err => {
+        if(count <= 2) {
+          setTimeout(()=> handlerPostTicket(ticketResult, count + 1), 2000);
+        } else {
+          return console.log(`Данные не отправлены на сервер! ${err}`);
+        }
+      });
   }
 
   return (
